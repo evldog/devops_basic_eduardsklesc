@@ -1,2 +1,2 @@
-# devops_basic_eduardsklesc
-DevOps pamati iesācējiem
+# DevOPS repozitorijs
+Eduarda Kļeščinska DevOps repozitorijs pamati iesācējiem
