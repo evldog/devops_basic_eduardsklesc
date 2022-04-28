@@ -104,6 +104,7 @@
     | module_1/hello_world.py | module_2/hello_world.py |
     | ------ | ------ |
     | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 |
+    
     Git sees files with the same content size as one entity with the same id (hash)
 	So we can conclude that de-duplication mechanism is in place
 
