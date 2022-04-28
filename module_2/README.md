@@ -105,8 +105,8 @@
     | ------ | ------ |
     | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 |
     
-    Git sees files with the same content size as one entity with the same id (hash)
-	So we can conclude that de-duplication mechanism is in place
+    Git sees files with the same content size as one entity with the same id (hash). 
+    So we can conclude that de-duplication mechanism is in place
 
 >14\. Rezultātus apkopot module_2 README.md
 *
