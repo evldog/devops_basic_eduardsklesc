@@ -98,13 +98,14 @@
 >13\. Salīdzināt vienādu failu (ne README) hash no mapes module_1 un module_2. Vai git redz atšķirību starp šiem failiem?
 *
     ```sh
-    $ git cat-file -p main^{tree}:module_1 | grep README.md | awk '{print $3}'
-    $ git cat-file -p main^{tree}:module_2 | grep README.md | awk '{print $3}'
+    $ git cat-file -p main^{tree}:module_1 | grep hello_world.py | awk '{print $3}'
+    $ git cat-file -p main^{tree}:module_2 | grep hello_world.py | awk '{print $3}'
     ```
-    | module_1/README.MD | module_2/README.MD |
+    | module_1/hello_world.py | module_2/hello_world.py |
     | ------ | ------ |
-    | 1774d44a142630a3057623bd178c1cff3188fbc7 | e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 |
-    Git sees each file differently, as they have different identifiers
+    | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 | 5e91ef2e6d05adaa9e8860202fb5acc511a82589 |
+    Git sees files with the same content size as one entity with the same id (hash)
+	So we can conclude that de-duplication mechanism is in place
 
 >14\. Rezultātus apkopot module_2 README.md
 *
